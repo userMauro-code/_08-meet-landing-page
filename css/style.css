@@ -28,6 +28,7 @@ html, body {
     font-family:  var(--font);
     font-size: clamp(16px, 1vw, 20px);
     color: var(--body-gray);
+    font-weight: var(--font-w-500);
 }
 
 .hero__buttons > a,
@@ -115,7 +116,7 @@ html, body {
 }
 
 .hero > .hero__buttons > a:first-child {
-    background-color: var(--light-cyan);
+    background-color: var(--teal);
     color: var(--off-white);
     font-weight: var(--font-w-700);
 }
@@ -155,7 +156,8 @@ html, body {
 .content > .content__built {
     text-transform: uppercase;
     font-weight: var(--font-w-900);
-    color: var(--light-cyan);
+    color: var(--teal);
+    letter-spacing: 4px;
 }
 
 .content > .content__title {
@@ -165,7 +167,7 @@ html, body {
 }
 
 .footer {
-    background-image: url(../assets/mobile/image-footer.jpg);
+    background-image: linear-gradient(rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), url(../assets/mobile/image-footer.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
