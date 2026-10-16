@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Meet landing page</title>
 </head>
@@ -16,21 +20,23 @@
   </header>
   <main class="main">
     <div class="hero">
-      <div class="hero__image-container">
-        <img src="./assets/tablet/image-hero.png" alt="Group of people chatting on a video call">
-      </div>
-      <div class ="hero">
-        <h1 class="hero__title">Group Chat for Everyone</h1>
-        <p class="hero__description">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+      <div class="hero__image-container"></div>
+      <div class ="hero__data">
+        <h1 class="hero__data-title">Group Chat for Everyone</h1>
+        <p class="hero__data-description">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
       </div>
       <div class="hero__buttons">
           <a href="#">Download v1.3</a>
           <a href="#">What is it?</a>
       </div>
     </div>
-    <div class="separator"> 
-      <p>01</p>
+    <div class="separatorContent">
+      <div class="separator__line"></div>
+      <div class="separator"> 
+        <p>01</p>
+      </div>
     </div>
+    
     <section class="gallery-grid">
         <article>
           <img src="./assets/desktop/image-man-texting.jpg" alt="">
@@ -51,14 +57,18 @@
       <p class="content__text">Send messages, share files, show your screen, and record your meetings — all in one 
   workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
     </section>
-    <div class="separator">
-      <p>02</p>
+    <div class="separatorContent">
+      <div class="separator__line"></div>
+      <div class="separator separator__two">
+        <p>02</p>
+      </div>
     </div>
-    <footer class="footer">
+    
+    <section class="footer">
       <h2 class="footer__title">Experience more together</h2>
       <p class="footer__text">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
       <a class="footer__button" href="">Download v1.3</a>
-    </footer>
+    </section>
   </main>
       
  
