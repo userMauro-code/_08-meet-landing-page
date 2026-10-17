@@ -48,6 +48,18 @@ html, body {
     margin: 2rem 0;
 }
 
+.separatorContent--two {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.separatorContent--two > .footer {
+    position: absolute;
+    top: 6rem;
+    z-index: 2;
+}
+
 .separator {
     width: 100%;
     display: flex;
