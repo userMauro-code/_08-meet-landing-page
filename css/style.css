@@ -54,6 +54,12 @@ html, body {
     z-index: 30;
 }
 
+.separatorContent--two > .separator > p {
+    position: relative;
+    z-index: 15;
+    background-color: var(--off-white);
+}
+
 .separatorContent--two > .footer {
     position: absolute;
     top: 6rem;
