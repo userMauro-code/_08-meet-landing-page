@@ -125,7 +125,7 @@ html, body {
     background-size: contain;
 }
 
-.hero > .hero__buttons {
+.hero > .grid--desktop > .hero__buttons {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -133,13 +133,13 @@ html, body {
     margin-top: 1rem;
 }
 
-.hero > .hero__buttons > a:first-child {
+.hero > .grid--desktop > .hero__buttons > a:first-child {
     background-color: var(--teal);
     color: var(--off-white);
     font-weight: var(--font-w-700);
 }
 
-.hero > .hero__buttons > a:last-child {
+.hero > .grid--desktop > .hero__buttons > a:last-child {
     background-color: var(--purple);
     color: var(--off-white);
     font-weight: var(--font-w-700);
@@ -216,7 +216,7 @@ html, body {
         margin: 0 auto;
     }
 
-    .hero > .hero__buttons {
+    .hero > .grid--desktop > .hero__buttons {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -246,20 +246,18 @@ html, body {
 @media(min-width: 1240px) {
 
     .hero {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-row: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
     .hero > .hero--left {
         background-image: url(../assets/desktop/image-hero-left.png);
-        height: 15rem;
-        grid-column: 0/1;
+        
+        
     }
 
     .hero > .hero--right {
         background-image: url(../assets/desktop/image-hero-right.png);
-        height: 15rem;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -268,8 +266,8 @@ html, body {
 
     .grid--desktop {
         grid-column:  2/3;
-        max-width: 50%;
-        grid-row: 0/1;
+        
+        margin: 0 auto;
     }
 
     .gallery-grid {
