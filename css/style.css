@@ -243,17 +243,33 @@ html, body {
 
 }
 
-@media(min-width: 1240px) {
+@media(min-width: 1280px) {
+
+    .header {
+        margin-top: 2rem;
+    }
+
+    .header > .header__logo > img {
+        height: 2rem;
+    }
 
     .hero {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 6rem;
+    }
+
+    .hero > .grid--desktop > .hero__data > .hero__data-title {
+        font-size:  4rem;
+    }
+
+    .hero > .grid--desktop > .hero__data > .hero__data-description{
+        font-size: 1.1rem;
     }
 
     .hero > .hero--left {
-        background-image: url(../assets/desktop/image-hero-left.png);
-        
-        
+        background-image: url(../assets/desktop/image-hero-left.png);  
     }
 
     .hero > .hero--right {
@@ -266,8 +282,9 @@ html, body {
 
     .grid--desktop {
         grid-column:  2/3;
-        
+        grid-row: -2/1;
         margin: 0 auto;
+        align-self: center;
     }
 
     .gallery-grid {
